@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myecomerce">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyEcomerce">
+        <activity
+            android:name=".activities.PlacedOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.NavCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DetailedActivity"
+            android:exported="false" />
+        <activity android:name=".Login1.EditProfile"/>
+
+        <activity
+            android:name=".activities.ViewAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignIn"
+            android:exported="false" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".ProfileInfo"/>
+        <activity android:name=".Sanh" />
+        <activity android:name=".Login1.ProfileInfo"/>
+        <activity android:name=".activities.MainActivity"/>
+        <activity android:name=".Login1.Profile"/>
+        <activity android:name=".Login1.Register"/>
+        <activity android:name=".Login1.Login"/>
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyEcomerce.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+    </application>
+
+</manifest>
